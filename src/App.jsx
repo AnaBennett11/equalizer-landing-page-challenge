@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Header from './Components/Header/Header'
-
-
+import Middle from './Components/Middle/Middle'
+import './styles/_global.scss';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,6 +9,7 @@ function App() {
   return (
     <>
      <Header />
+     <Middle />
     </>
   )
 }
