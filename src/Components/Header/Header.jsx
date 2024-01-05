@@ -5,7 +5,7 @@ import logo from "../../assets/logo.svg";
 const Header = () => {
   return (
     <>
-      <div className="header">
+      <header className="header">
         <img src={logo} alt="Logo" className="header-logo" />
         <h1 className="header-statement">
           We make your music sound extraordinary.
@@ -16,7 +16,7 @@ const Header = () => {
           parametric EQ & volume mixer. Control bass, mids, treble, gain
           control, reverb, and more!
         </p>
-      </div>
+      </header>
     </>
   );
 };
