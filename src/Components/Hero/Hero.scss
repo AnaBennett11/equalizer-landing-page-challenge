@@ -1,4 +1,5 @@
 @use "../../styles/_typography" as *;
+
 .hero-section {
   background-color: #fa7453;
   width: 375px;
@@ -10,6 +11,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
   .hero-title {
     font-family: IBM Plex Sans;
     font-size: 32px;
@@ -21,6 +23,7 @@
     margin-left: 1.5rem;
     margin-top: 2rem;
   }
+
   .hero-paragraph {
     font-family: IBM Plex Sans;
     font-size: 18px;
@@ -32,6 +35,7 @@
     margin-left: 1.5rem;
     margin-top: -.75rem;
   }
+
   .hero-price {
     font-family: IBM Plex Sans;
     color: #fcfaf9;
@@ -49,6 +53,63 @@
       line-height: 52px;
       letter-spacing: 0px;
       text-align: left;
+    }
+  }
+
+  .hero-buttons {
+    display: flex;
+    margin-top: 1.5rem;
+    flex-direction: column;
+
+    margin-left: 2.5rem;
+
+    .download-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 61px;
+      width: 296px;
+      padding: 1rem 2rem;
+      margin-bottom: 1rem;
+      border: none;
+      border-radius: 0.5rem;
+      color: #fcfaf9;
+      font-family: IBM Plex Sans;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.5;
+      letter-spacing: 0px;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+
+      .button-icon {
+        margin-right: 0.5rem;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        background-color: #1c1c1c;
+      }
+
+      &.ios {
+        background-color: #191826;
+        &:hover {
+          background-color: #66E2DC;
+        }
+      }
+
+      &.android {
+        background-color: #FCFAF9;
+        color: #2a2a2a;
+        &:hover {
+          background-color: #FFB964;
+          
+        }
+      }
     }
   }
 }
