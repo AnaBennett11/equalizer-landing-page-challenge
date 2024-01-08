@@ -1,6 +1,13 @@
 import React from "react";
 import "../Footer/Footer.scss";
 import logo from "../../assets/logo.svg";
+import facebookIcon from "../../assets/facebookIcon.svg";
+import instagramIcon from "../../assets/instagramIcon.svg";
+import twitterIcon from "../../assets/twitterIcon.svg";
+
+
+
+
 
 const Footer = () => {
     return (
@@ -12,6 +19,23 @@ const Footer = () => {
             via social media or email us at{" "}
             <a href="mailto:equalizer@example.com">equalizer@example.com</a>
           </p>
+          <section className="footer-icon-section">
+            <img
+              src={facebookIcon}
+              alt="Facebook icon"
+              className="facebookIcon"
+            />
+            <img
+              src={instagramIcon}
+              alt="Instagram icon"
+              className="instagramIcon"
+            />
+            <img
+              src={twitterIcon}
+              alt="Twitter icon"
+              className="Twitter Icon"
+            />
+          </section>
         </footer>
       </>
     );

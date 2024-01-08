@@ -5,22 +5,22 @@
   height: 200px;
   top: -10rem;
   left: 5694px;
-    .footer-paragraph {
-      font-family: IBM Plex Sans;
+  .footer-paragraph {
+    font-family: IBM Plex Sans;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0px;
-   
+
     color: #333;
 
     a {
-      font-weight: 700; 
+      font-weight: 700;
       color: #333;
       text-decoration: none;
       &:hover {
         text-decoration: none;
       }
     }
-    }
+  }
 }
