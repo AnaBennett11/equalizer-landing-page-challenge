@@ -1,5 +1,5 @@
 @use "../../styles/_typography" as *;
-
+@use "../../styles/mixins" as *;
 
 .header {
   background-image: url("../../assets/bg-main-mobile.png");
@@ -9,37 +9,70 @@
   align-items: flex-start;
   background-position: top -13rem right -13rem;
   height: 60vh;
-
-  .header-logo {
-    width: 146.09px;
-    height: 32px;
-    top: 39.99px;
-    left: 24.15px;
-    margin-left: 1.5rem;
-    margin-bottom: 2rem;
-    margin-top: 3rem;
+  @include Tablet {
+    background-image: url("../../assets/bg-main-tablet.png");
+    flex-direction: row;
+    background-size: fixed;
+    background-position: top -20rem right -7rem;
   }
+  .header-left-section {
+    .header-logo {
+      width: 146.09px;
+      height: 32px;
+      top: 39.99px;
+      left: 24.15px;
+      margin-left: 1.5rem;
+      margin-bottom: 2rem;
+      margin-top: 3rem;
+    }
 
-  .header-statement {
-    font-family: "IBM Plex Sans";
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 48px;
-    letter-spacing: -0.4545454680919647px;
-    text-align: left;
-    margin-left: 1.5rem;
-    margin-top: 2rem;
+    .header-statement {
+      font-family: "IBM Plex Sans";
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 48px;
+      letter-spacing: -0.4545454680919647px;
+      text-align: left;
+      margin-left: 1.5rem;
+      margin-top: 2rem;
+      @include Tablet {
+        font-size: 64px;
+        line-height: 64px;
+        letter-spacing: -0.7272727489471436px;
+      }
+    }
+    .header-paragraph {
+      font-family: IBM Plex Sans;
+      color: #191826;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: 0px;
+      text-align: left;
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+      margin-top: -0.5rem;
+      @include Tablet {
+        font-size: 18px;
+        line-height: 28px;
+        width: 514px;
+        height: 112px;
+        top: 409px;
+        left: 39px;
+      }
+    }
   }
-  .header-paragraph {
-    font-family: IBM Plex Sans;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-    letter-spacing: 0px;
-    text-align: left;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    margin-top: -.5rem;
-    
+  .header-right-section {
+    .header-pattern {
+      visibility: hidden;
+      @include Tablet {
+        visibility: visible;
+        width: 266.67px;
+        height: 400px;
+        margin-top: -1.75rem;
+        margin-right: -6rem;
+        border-radius: 0px, 100px, 0px, 100px;
+      }
+    }
   }
 }
