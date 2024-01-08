@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Header from './Components/Header/Header'
 import Middle from './Components/Middle/Middle'
+import Hero from "./Components/Hero/Hero";
 import './styles/_global.scss';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <>
      <Header />
      <Middle />
+     <Hero />
     </>
   )
 }
