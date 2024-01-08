@@ -2,17 +2,25 @@
 
 .footer {
   width: 100vw;
-  height: 200px;
-  top: -10rem;
-  left: 5694px;
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+
+  .footer-logo {
+    width: 146.09px;
+    height: 32px;
+    margin-left: 1.5rem;
+    margin-top: -10rem;
+  }
   .footer-paragraph {
     font-family: IBM Plex Sans;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0px;
-
+    line-height: 26px;
     color: #333;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
 
     a {
       font-weight: 700;
@@ -21,6 +29,16 @@
       &:hover {
         text-decoration: none;
       }
+    }
+  }
+  .footer-icon-section {
+    display: flex;
+    flex-direction: row;
+    margin-left: .5rem;
+
+    img {
+      margin: .5rem;
+     
     }
   }
 }
