@@ -1,4 +1,5 @@
 @use "../../styles/_typography" as *;
+@use "../../styles/mixins" as *;
 
 .hero-section {
   background-color: #fa7453;
@@ -11,6 +12,12 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  @include Tablet {
+    width: 399px;
+    height: 546px;
+    margin-left: 20rem;
+    margin-top: -15rem;
+  }
 
   .hero-title {
     font-family: IBM Plex Sans;
@@ -34,7 +41,7 @@
     color: #fcfaf9;
     margin-left: 2rem;
     margin-right: 2rem;
-    margin-top: -.75rem;
+    margin-top: -0.75rem;
   }
 
   .hero-price {
@@ -98,16 +105,15 @@
       &.ios {
         background-color: #191826;
         &:hover {
-          background-color: #66E2DC;
+          background-color: #66e2dc;
         }
       }
 
       &.android {
-        background-color: #FCFAF9;
+        background-color: #fcfaf9;
         color: #2a2a2a;
         &:hover {
-          background-color: #FFB964;
-          
+          background-color: #ffb964;
         }
       }
     }
