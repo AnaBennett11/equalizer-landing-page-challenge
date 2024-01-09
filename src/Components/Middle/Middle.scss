@@ -2,19 +2,19 @@
   height: 600px;
   background-color: #191826;
   border-radius: 3%;
-  position: relative; /* Add this line */
+  position: relative; 
   .middle-section-image {
     width: 280px;
     height: 420px;
     margin-left: 3rem;
-    position: absolute; /* Add this line */
+    position: absolute; 
 
   }
   .middle-section-phone {
    width: 208.97px;
   height: 430px;
-  position: absolute; /* Add this line */
-  top: -90px; /* Adjust this value as needed */
+  position: absolute; 
+  top: -90px;  
   left: 5rem;
   z-index: 1;
     

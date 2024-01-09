@@ -12,7 +12,7 @@
   @include Tablet {
     background-image: url("../../assets/bg-main-tablet.png");
     flex-direction: row;
-    background-size: fixed;
+  
     background-position: top -20rem right -7rem;
   }
   .header-left-section {
@@ -69,7 +69,7 @@
         visibility: visible;
         width: 266.67px;
         height: 400px;
-        margin-top: -1.75rem;
+        margin-top: -3rem;
         margin-right: -6rem;
         border-radius: 0px, 100px, 0px, 100px;
       }
