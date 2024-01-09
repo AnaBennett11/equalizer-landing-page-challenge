@@ -1,22 +1,33 @@
+@use "../../styles/mixins" as *;
+
 .middle-section {
   height: 600px;
   background-color: #191826;
   border-radius: 3%;
-  position: relative; 
+  position: relative;
+  @include Tablet {
+    width: 696px;
+    height: 600px;
+    margin-left: 4.2rem;
+   
+  }
   .middle-section-image {
     width: 280px;
     height: 420px;
     margin-left: 3rem;
-    position: absolute; 
-
+    position: absolute;
   }
   .middle-section-phone {
-   width: 208.97px;
-  height: 430px;
-  position: absolute; 
-  top: -90px;  
-  left: 5rem;
-  z-index: 1;
-    
+    width: 208.97px;
+    height: 430px;
+    position: absolute;
+    top: -90px;
+    left: 5rem;
+    z-index: 1;
+
+    @include Tablet {
+      width: 270.21px;
+      height: 556px;
+    }
   }
 }

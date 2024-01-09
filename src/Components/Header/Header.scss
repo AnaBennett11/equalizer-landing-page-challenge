@@ -12,10 +12,11 @@
   @include Tablet {
     background-image: url("../../assets/bg-main-tablet.png");
     flex-direction: row;
-  
-    background-position: top -20rem right -7rem;
+    margin-bottom: 12rem;
+    background-position: top -24rem right -7rem;
   }
   .header-left-section {
+  
     .header-logo {
       width: 146.09px;
       height: 32px;
@@ -57,8 +58,9 @@
         line-height: 28px;
         width: 514px;
         height: 112px;
-        top: 409px;
-        left: 39px;
+        
+        
+        
       }
     }
   }
