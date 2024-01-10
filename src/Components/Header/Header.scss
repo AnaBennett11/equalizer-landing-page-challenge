@@ -15,8 +15,15 @@
     margin-bottom: 12rem;
     background-position: top -24rem right -7rem;
   }
+  @include Desktop {
+    background-image: url("../../assets/bg-main-desktop.png");
+    height: 79vh;
+    // background-position:
+  }
   .header-left-section {
-  
+    @include Desktop {
+      margin-left: 7rem;
+    }
     .header-logo {
       width: 146.09px;
       height: 32px;
@@ -41,6 +48,12 @@
         line-height: 64px;
         letter-spacing: -0.7272727489471436px;
       }
+      @include Desktop {
+        width: 1015px;
+        height: 176px;
+        font-size: 88px;
+        line-height: 88px;
+      }
     }
     .header-paragraph {
       font-family: IBM Plex Sans;
@@ -58,9 +71,15 @@
         line-height: 28px;
         width: 514px;
         height: 112px;
-        
-        
-        
+      }
+      @include Desktop {
+        width: 825px;
+        height: 102px;
+        top: 437px;
+        left: 164.5px;
+        font-size: 20px;
+        line-height: 34px;
+        letter-spacing: 0px;
       }
     }
   }
@@ -74,6 +93,9 @@
         margin-top: -3rem;
         margin-right: -6rem;
         border-radius: 0px, 100px, 0px, 100px;
+      }
+      @include Desktop {
+        margin-left: 1.5rem;
       }
     }
   }
