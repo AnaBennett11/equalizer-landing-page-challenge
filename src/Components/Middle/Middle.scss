@@ -3,12 +3,18 @@
 .middle-section {
   height: 600px;
   background-color: #191826;
-  border-radius: 3%;
+  border-radius: 2%;
   position: relative;
   @include Tablet {
     width: 696px;
-    height: 600px;
+   
     margin-left: 4.2rem;
+  }
+  @include Desktop {
+    width: 1110px;
+ 
+    margin-left: 10.5rem;
+    margin-top: -13rem;
   }
   .middle-section-image {
     width: 280px;
@@ -20,6 +26,9 @@
       width: 320px;
       height: 500px;
       margin-top: -3.5rem;
+    }
+    @include Desktop {
+      margin-left: 18.75rem;
     }
   }
   .middle-section-phone {
@@ -34,6 +43,11 @@
       width: 270.21px;
       height: 556px;
       margin-top: -4rem;
+    }
+    @include Desktop {
+      width: 299.03px;
+      height: 628.63px;
+      margin-top: -7rem;
     }
   }
 }
