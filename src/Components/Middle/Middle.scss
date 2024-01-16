@@ -7,12 +7,12 @@
   position: relative;
   @include Tablet {
     width: 696px;
-    height: 600px;
+   
     margin-left: 4.2rem;
   }
   @include Desktop {
     width: 1110px;
-    height: 600px;
+ 
     margin-left: 10.5rem;
     margin-top: -13rem;
   }
